@@ -60,3 +60,7 @@ h1 {
     min-width: 800px;
   }
 }
+
+#lifes {
+  color: #ffffff;
+}
