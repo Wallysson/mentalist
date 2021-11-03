@@ -9,7 +9,7 @@ function Play() {
 
   if (tries > 0) {
     if (myNumber === sortNumber) {
-      element.innerHTML = 'Congratulations, you won! ' + sortNumber
+      element.innerHTML = 'Congratulations, you won! '
       eraseAnswer()
     } else if (myNumber < 0 || myNumber > 10) {
       element.innerHTML = 'Please, enter numbers 0 to 10'
