@@ -20,7 +20,7 @@ Simple game what the player choose a number and need hit the number chosen by ma
 ### 📑 Next Features
 For increasing my ability I will develop some functions in this project
 
-- Change game visual 
+- Change game visual ✔️
 - Only 3 attempts to win ✔️
 - Reset game
 - Score
