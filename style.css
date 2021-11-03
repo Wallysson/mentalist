@@ -1,11 +1,12 @@
 body {
   font-family: 'Roboto', monospace;
-  background-image: url('https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-03-mentalista.png');
-  background-position: center bottom;
+  background-image: url('https://images.hdqwalls.com/download/miles-morales-pixel-art-t5-1920x1080.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #000000;
-  min-height: 600px;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
@@ -13,46 +14,75 @@ body {
   text-align: center;
   margin-top: 12px;
   padding: 20px;
+  background: rgb(109, 31, 139);
+  background: linear-gradient(
+    292deg,
+    rgba(109, 31, 139, 1) 14%,
+    rgba(118, 60, 193, 1) 87%
+  );
+  width: 450px;
+  height: 300px;
+  border-radius: 0 60px 0 60px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  justify-items: center;
 }
 
 h1 {
   color: #ffffff;
-  margin: 0 0 5px;
-  font-size: 36px;
-}
-
-.logo-imersao-dev {
-  width: 150px;
+  text-align: center;
+  font-size: 42px;
 }
 
 .page-p {
   color: #ffffff;
-  font-size: 24px;
-  margin-top: 24px;
+  font-size: 28px;
+  margin-top: 10px;
 }
 
 #received {
-  border-radius: 5px;
-  padding: 6px;
-  margin-top: 4px;
+  display: flex;
+  margin-top: 0;
+  width: 240px;
+  height: 30px;
+  border-radius: 35px;
+  border: none;
+  outline: 0;
+  padding: 0 10px;
+  font-size: 16px;
 }
 
 .buttonPlay {
-  margin-top: 14px;
-  border-radius: 5px;
-  padding: 6px 10px;
-  background: #ffffff;
+  border-radius: 25px;
+  padding: 10px;
+  width: 90px;
+  outline: 0;
+  border: none;
+  height: 40px;
+  color: #ffffff;
+  background: orangered;
+  font-size: 16px;
+  text-align: center;
 }
 
-.alura-logo {
-  position: absolute;
-  top: 15px;
-  right: 15px;
+.buttonPlay:hover {
+  background: rgb(223, 160, 223);
 }
 
 #endResult {
-  font-size: 28px;
+  margin: 0;
+  font-size: 16px;
   color: #ffffff;
+  text-align: center;
+}
+
+#footer {
+  margin: 0;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
 }
 
 @media (max-height: 500px) {
@@ -61,6 +91,11 @@ h1 {
   }
 }
 
+span {
+  color: purple;
+}
+
 #lifes {
+  margin-top: -30px;
   color: #ffffff;
 }
