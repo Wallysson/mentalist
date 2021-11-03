@@ -8,28 +8,22 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="container">
+    <header>
       <h1 class="title">Mentalista</h1>
-      <img
-        src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-mentalista.svg"
-        alt="Logo da Imersao Dev"
-        class="logo-imersao-dev"
-      />
+    </header>
+    <div class="container">
+      <p class="page-p">Enter a number from 0 to 10</p>
+      <h3 id="lifes"></h3>
+      <input type="number" id="received" />
+
+      <button type="submit" onclick="Play()" class="buttonPlay">PLAY</button>
       <div class="result">
-        <p class="page-p">Enter a number from 0 to 10</p>
-        <h3 id="lifes"></h3>
-        <input type="number" id="received" />
-        <br />
-        <button type="submit" onclick="Play()" class="buttonPlay">Play!</button>
         <h2 id="endResult"></h2>
       </div>
     </div>
-    <a href="https://alura.com.br/" class="alura-logo">
-      <img
-        src="https://www.alura.com.br/assets/img/home/alura-logo.svg"
-        alt="Logo Alura"
-      />
-    </a>
+    <div class="footer">
+      <h2 id="footer"><span>Developed by:</span> Wallysson Lima do Couto</h2>
+    </div>
   </body>
   <script src="./script.js"></script>
 </html>
