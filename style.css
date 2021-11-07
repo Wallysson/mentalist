@@ -1,18 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
 body {
   font-family: 'Roboto', monospace;
   background-image: url('https://images.hdqwalls.com/download/miles-morales-pixel-art-t5-1920x1080.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
   display: grid;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
+  align-content: center;
+}
+
+header {
+  position: absolute;
+  padding: 24px;
+  box-sizing: border-box;
 }
 
 .container {
-  height: 100vh;
   text-align: center;
-  margin-top: 12px;
   padding: 20px;
   background: rgb(109, 31, 139);
   background: linear-gradient(
@@ -20,14 +32,13 @@ body {
     rgba(109, 31, 139, 1) 14%,
     rgba(118, 60, 193, 1) 87%
   );
-  width: 450px;
+  width: 500px;
   height: 300px;
   border-radius: 0 60px 0 60px;
-  display: grid;
   align-items: center;
   justify-content: center;
-  position: relative;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
@@ -38,15 +49,12 @@ h1 {
 
 .page-p {
   color: #ffffff;
-  font-size: 28px;
-  margin-top: 10px;
+  font-size: 26px;
 }
 
 #received {
-  display: flex;
-  margin-top: 0;
   width: 240px;
-  height: 30px;
+  height: 100px;
   border-radius: 35px;
   border: none;
   outline: 0;
@@ -65,6 +73,7 @@ h1 {
   background: orangered;
   font-size: 16px;
   text-align: center;
+  margin-top: 25px;
 }
 
 .buttonPlay:hover {
@@ -72,17 +81,17 @@ h1 {
 }
 
 #endResult {
-  margin: 0;
   font-size: 16px;
   color: #ffffff;
   text-align: center;
+  margin-top: 16px;
 }
 
 #footer {
-  margin: 0;
   font-size: 14px;
   color: #ffffff;
   text-align: center;
+  margin-top: 16px;
 }
 
 @media (max-height: 500px) {
@@ -96,6 +105,5 @@ span {
 }
 
 #lifes {
-  margin-top: -30px;
   color: #ffffff;
 }
