@@ -1,78 +1,100 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
+  outline: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  height: 100vh;
+
+  font-family: 'Roboto', monospace;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
-  font-family: 'Roboto', monospace;
-  background-image: url('https://images.hdqwalls.com/download/miles-morales-pixel-art-t5-1920x1080.jpg');
+  background: url('https://images.hdqwalls.com/download/miles-morales-pixel-art-t5-1920x1080.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  display: grid;
+  background-color: rgb(39, 15, 103);
+  /* display: grid;
   justify-content: center;
+
+  align-content: center; */
   /* align-items: center; */
-  align-content: center;
 }
 
 header {
-  position: absolute;
   padding: 24px;
-  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+
   text-align: center;
   padding: 20px;
+
   background: rgb(109, 31, 139);
   background: linear-gradient(
     292deg,
     rgba(109, 31, 139, 1) 14%,
     rgba(118, 60, 193, 1) 87%
   );
-  width: 500px;
-  height: 300px;
+
+  width: 800px;
+  height: 600px;
+  margin: 10% auto;
   border-radius: 0 60px 0 60px;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
+
   z-index: 1;
 }
 
 h1 {
   color: #ffffff;
   text-align: center;
-  font-size: 42px;
+  font-size: 8rem;
 }
 
 .page-p {
   color: #ffffff;
-  font-size: 26px;
+  font-size: 4.5rem;
 }
 
 #received {
-  width: 240px;
-  height: 100px;
+  width: 400px;
+  height: 50px;
   border-radius: 35px;
   border: none;
   outline: 0;
   padding: 0 10px;
-  font-size: 16px;
+  font-size: 1.6rem;
+  margin-top: 2rem;
 }
 
 .buttonPlay {
   border-radius: 25px;
   padding: 10px;
-  width: 90px;
+  width: 250px;
   outline: 0;
   border: none;
-  height: 40px;
+  height: 70px;
   color: #ffffff;
   background: orangered;
-  font-size: 16px;
+  font-size: 3rem;
   text-align: center;
   margin-top: 25px;
 }
@@ -82,23 +104,17 @@ h1 {
 }
 
 #endResult {
-  font-size: 16px;
+  font-size: 3rem;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+footer {
+  font-size: 1.4rem;
   color: #ffffff;
   text-align: center;
   margin-top: 16px;
-}
-
-#footer {
-  font-size: 14px;
-  color: #ffffff;
-  text-align: center;
-  margin-top: 16px;
-}
-
-@media (max-height: 500px) {
-  body {
-    min-width: 800px;
-  }
 }
 
 span {
@@ -107,4 +123,225 @@ span {
 
 #lifes {
   color: #ffffff;
+  margin-top: 2rem;
+  font-size: 3rem;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  font-size: 3rem;
+}
+
+@media (max-width: 2715px) {
+  body {
+    height: 100vh;
+    background-position: center;
+  }
+  h1 {
+    font-size: 8.4rem;
+  }
+  .container {
+    width: 800px;
+    height: 600px;
+
+    display: flex;
+  }
+
+  .page-p {
+    font-size: 4.5rem;
+  }
+
+  #lifes {
+    font-size: 3rem;
+  }
+  #received {
+    width: 350px;
+    height: 60px;
+    font-size: 3rem;
+  }
+  .buttonPlay {
+    width: 180px;
+    height: 80px;
+
+    font-size: 3.2rem;
+  }
+
+  #endResult {
+    font-size: 3.2rem;
+  }
+
+  footer {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 2560px) {
+  body {
+    height: 100vh;
+    background-position: center;
+  }
+  h1 {
+    font-size: 8.4rem;
+  }
+  .container {
+    width: 800px;
+    height: 600px;
+
+    display: flex;
+  }
+
+  .page-p {
+    font-size: 4.5rem;
+  }
+
+  #lifes {
+    font-size: 3rem;
+  }
+  #received {
+    width: 350px;
+    height: 60px;
+    font-size: 3rem;
+  }
+  .buttonPlay {
+    width: 180px;
+    height: 80px;
+
+    font-size: 3.2rem;
+  }
+
+  #endResult {
+    font-size: 3.2rem;
+  }
+  footer {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 1440px) {
+  body {
+    height: 100vh;
+    background-position: center;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  .container {
+    width: 400px;
+    height: 250px;
+
+    display: flex;
+  }
+
+  .page-p {
+    font-size: 2rem;
+  }
+
+  #lifes {
+    font-size: 1.5rem;
+  }
+  #received {
+    width: 175px;
+    height: 30px;
+    font-size: 2.5rem;
+  }
+  .buttonPlay {
+    width: 90px;
+    height: 40px;
+
+    font-size: 1.6rem;
+  }
+
+  #endResult {
+    font-size: 1.5rem;
+  }
+  footer {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
+    height: 100vh;
+    background-position: center;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  .container {
+    width: 400px;
+    height: 250px;
+    margin: 150px auto;
+    display: flex;
+  }
+
+  .page-p {
+    font-size: 2rem;
+  }
+
+  #lifes {
+    font-size: 1.5rem;
+  }
+  #received {
+    width: 175px;
+    height: 30px;
+    font-size: 2.5rem;
+  }
+  .buttonPlay {
+    width: 90px;
+    height: 40px;
+
+    font-size: 1.6rem;
+  }
+
+  #endResult {
+    font-size: 1.5rem;
+  }
+  footer {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 402px) {
+  body {
+    height: 100vh;
+    background-position: center;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  .container {
+    width: 300px;
+    height: 200px;
+    margin: 150px auto;
+    display: flex;
+  }
+
+  .page-p {
+    font-size: 1.5rem;
+  }
+
+  #lifes {
+    font-size: 1rem;
+  }
+  #received {
+    width: 125px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+  .buttonPlay {
+    width: 70px;
+    height: 40px;
+
+    font-size: 1rem;
+  }
+
+  #endResult {
+    font-size: 1rem;
+  }
+  footer {
+    font-size: 1.5rem;
+  }
 }
