@@ -178,7 +178,7 @@ footer {
   }
 }
 
-@media (max-width: 2000px) {
+@media (max-width: 2560px) {
   body {
     height: 100vh;
     background-position: center;
@@ -220,7 +220,7 @@ footer {
   }
 }
 
-@media (max-width: 1629px) {
+@media (max-width: 2000px) {
   body {
     height: 100vh;
     background-position: center;
