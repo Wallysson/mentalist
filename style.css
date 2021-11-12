@@ -220,6 +220,48 @@ footer {
   }
 }
 
+@media (max-width: 1629px) {
+  body {
+    height: 100vh;
+    background-position: center;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  .container {
+    width: 400px;
+    height: 250px;
+
+    display: flex;
+  }
+
+  .page-p {
+    font-size: 2rem;
+  }
+
+  #lifes {
+    font-size: 1.5rem;
+  }
+  #received {
+    width: 175px;
+    height: 30px;
+    font-size: 2.5rem;
+  }
+  .buttonPlay {
+    width: 90px;
+    height: 40px;
+
+    font-size: 1.6rem;
+  }
+
+  #endResult {
+    font-size: 1.5rem;
+  }
+  footer {
+    font-size: 1.5rem;
+  }
+}
+
 @media (max-width: 1440px) {
   body {
     height: 100vh;
