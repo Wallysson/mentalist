@@ -178,7 +178,7 @@ footer {
   }
 }
 
-@media (max-width: 2560px) {
+@media (max-width: 2000px) {
   body {
     height: 100vh;
     background-position: center;
