@@ -22,7 +22,7 @@ For increasing my ability I will develop some functions in this project
 
 - Change game visual ✔️
 - Only 3 attempts to win ✔️
-- Fix breakpoints
+- Fix breakpoints ✔️
 - Reset game
 - Tips what number is (example: number is even or odd)
 
